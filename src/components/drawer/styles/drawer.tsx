@@ -1,21 +1,7 @@
-import styled, { createGlobalStyle } from 'styled-components/macro';
+import styled, { createGlobalStyle, css } from 'styled-components/macro';
 
-export const DrawerMask = styled.div`
-  position: absolute;
-  right: 0;
-  width: 100%;
-  height: 100%;
-  background: #000;
-  opacity: 0.38;
-`;
-
-export const DrawerContainer = styled.div`
-  position: absolute;
-  overflow: hidden;
-  width: 100%;
+const drawerHeight = css`
   top: 64px;
-  right: 0;
-  width: 100%;
   height: calc(100vh - 64px);
 
   @media (min-width: 375px) {
@@ -24,32 +10,54 @@ export const DrawerContainer = styled.div`
   }
 
   @media (min-width: 768px) {
-    top: 83px;
     height: calc(100vh - 83px);
   }
 
   @media (min-width: 1024px) {
-    top: 99px;
     height: calc(100vh - 99px);
   }
 `;
 
+export const DrawerMask = styled.div`
+  position: absolute;
+  right: 0;
+  width: 100%;
+  background: #000;
+  opacity: 0.38;
+
+  ${drawerHeight}
+`;
+
+export const DrawerContainer = styled.div<{ open?: boolean }>`
+  /* position: relative;
+  top: 0;
+  z-index: 99;
+  width: 100%; */
+`;
+
 export const Drawer = styled.div<{ open?: boolean }>`
-  position: relative;
+  position: fixed;
+  top: 0;
+  right: 20vw;
   width: 80vw;
-  height: 100%;
   background-color: #fff;
-  overflow: auto;
-  overflow-x: hidden;
+  /* overflow: auto;
+  overflow-x: hidden; */
   box-shadow: inset 0 4px 3px -3px rgb(0 0 0 / 10%),
     inset 0 4px 2px -2px rgb(0 0 0 / 7%);
   transition: transform 0.3s cubic-bezier(0.75, 0, 0.5, 1);
-  transform: ${({ open }) => (open ? 'translateX(20vw)' : 'translateX(100vw)')};
+  transform: ${({ open }) => (open ? 'translate(20vw)' : 'translateX(100vw)')};
+
+  ${drawerHeight}
 `;
 
 export const BlockBody = createGlobalStyle`
   body {
     overflow: hidden;
+    touch-action: none;
+    top: 0px;
+    position: fixed;
+    width: 100%;
   }
 `;
 
@@ -60,7 +68,6 @@ export const Menu = styled.ul`
   margin: 0;
   display: flex;
   flex-direction: column;
-  /* justify-content: center; */
 
   > li {
     list-style: none;
@@ -73,7 +80,6 @@ export const SubMenu = styled(Menu)<{
   padding-top: 0;
   position: absolute;
   top: 0;
-  /* left: ${({ open }) => (open ? 0 : '-100%')}; */
   left: 0;
   width: 100%;
   height: 100%;

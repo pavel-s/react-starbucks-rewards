@@ -1,4 +1,5 @@
 import styled from 'styled-components/macro';
+import { mGlobalContainer } from '../../../mixins';
 import {
   bottomLineCloseAnimation,
   bottomLineOpenAnimation,
@@ -10,6 +11,13 @@ const BP_HAMBURGER = '799px';
 
 export const Container = styled.header`
   position: relative;
+  z-index: 99;
+  background-color: #fff;
+
+  @media (min-width: 1024px) {
+    position: fixed;
+    width: 100%;
+  }
 `;
 
 export const Group = styled.div`
@@ -24,30 +32,12 @@ export const Group = styled.div`
 export const Nav = styled.nav`
   display: flex;
   align-items: center;
-  padding-left: 1.6rem;
-  padding-right: 1.6rem;
 
   ${Group} + ${Group} {
     margin-left: auto;
   }
 
-  @media (min-width: 768px) {
-    padding-left: 2.4rem;
-    padding-right: 2.4rem;
-  }
-
-  @media (min-width: 1024px) {
-    padding-left: 4rem;
-    padding-right: 4rem;
-  }
-
-  @media (min-width: 1520px) {
-    max-width: 1440px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 0;
-    padding-right: 0;
-  }
+  ${mGlobalContainer}
 `;
 
 export const LogoWrapper = styled.div`

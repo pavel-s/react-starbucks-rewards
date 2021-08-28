@@ -1,13 +1,12 @@
 import HeaderContainer from '../containers/header';
+import Main from '../containers/main';
 
 const Rewards = () => {
   return (
     <>
       <HeaderContainer />
-      <div style={{ height: '2000px', backgroundColor: 'pink' }}>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere culpa at
-        ullam.
-      </div>
+      <Main />
+      <div style={{ height: '2000px' }}></div>
     </>
   );
 };
