@@ -1,37 +1,6 @@
 import { createGlobalStyle } from 'styled-components';
-import SoDoSansRegularWoff from './fonts/SoDoSans-Regular.woff';
-import SoDoSansRegularWoff2 from './fonts/SoDoSans-Regular.woff2';
-import SoDoSansSemiBoldWoff from './fonts/SoDoSans-SemiBold.woff';
-import SoDoSansSemiBoldWoff2 from './fonts/SoDoSans-SemiBold.woff2';
-import SoDoSansBoldWoff from './fonts/SoDoSans-Bold.woff';
-import SoDoSansBoldWoff2 from './fonts/SoDoSans-Bold.woff2';
 
 const GlobalStyles = createGlobalStyle`
-  @font-face {
-    font-family: 'SoDoSans';
-    src: url(${SoDoSansRegularWoff2}) format('woff2'),
-        url(${SoDoSansRegularWoff}) format('woff');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-  }
-  @font-face {
-    font-family: 'SoDoSans';
-    src: url(${SoDoSansSemiBoldWoff2}) format('woff2'),
-        url(${SoDoSansSemiBoldWoff}) format('woff');
-    font-weight: 600;
-    font-style: normal;
-    font-display: swap;
-  }
-  @font-face {
-    font-family: 'SoDoSans';
-    src: url(${SoDoSansBoldWoff2}) format('woff2'),
-        url(${SoDoSansBoldWoff}) format('woff');
-    font-weight: bold;
-    font-style: normal;
-    font-display: swap;
-  }
-
   *, ::after, ::before {
     box-sizing: border-box;
   }
