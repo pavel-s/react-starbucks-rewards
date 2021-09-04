@@ -44,6 +44,10 @@ const GlobalStyles = createGlobalStyle`
     color: rgba(0, 0, 0, .87);
   }
 
+  a:hover {
+    text-decoration: none;
+  }
+
   input,
   textarea,
   button,

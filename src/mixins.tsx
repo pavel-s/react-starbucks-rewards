@@ -1,4 +1,4 @@
-import { css } from 'styled-components/macro';
+import { css, CSSProperties } from 'styled-components/macro';
 
 export const mGlobalContainer = css`
   padding-left: 1.6rem;
@@ -20,5 +20,25 @@ export const mGlobalContainer = css`
     margin-right: auto;
     padding-left: 0;
     padding-right: 0;
+  }
+`;
+
+type TmMobileDesktopVariantProps = {
+  variant?: 'mobile' | 'desktop';
+  display?: CSSProperties['display'];
+  breakpoint?: CSSProperties['width'];
+};
+
+// element that must be displayed only on mobile or only on desktop
+export const mMobileDesktopVariant = ({
+  variant = 'mobile',
+  display = 'flex',
+  breakpoint = '768px',
+}: TmMobileDesktopVariantProps) => css<TmMobileDesktopVariantProps>`
+  display: ${variant === 'mobile' ? display : 'none'};
+
+  @media (min-width: ${breakpoint}) {
+    display: ${variant === 'desktop' ? display : 'none'};
+    align-items: flex-start;
   }
 `;
