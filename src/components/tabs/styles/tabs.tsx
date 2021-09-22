@@ -27,7 +27,7 @@ export const Title = styled.h3`
     font-size: 2.4rem;
   }
 
-  @media (min-width: 375px) {
+  @media (min-width: 768px) {
     font-size: 2.8rem;
     padding-bottom: 4.8rem;
   }
