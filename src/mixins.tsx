@@ -42,3 +42,12 @@ export const mMobileDesktopVariant = ({
     align-items: flex-start;
   }
 `;
+
+// spread absolute element to container size
+export const mAbsoluteSpread = css`
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+`;

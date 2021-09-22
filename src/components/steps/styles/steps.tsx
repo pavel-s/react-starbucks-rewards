@@ -51,6 +51,10 @@ export const Card = styled.div`
   display: flex;
   padding-bottom: 3.2rem;
 
+  :last-of-type {
+    padding-bottom: 0;
+  }
+
   @media (min-width: 768px) {
     flex-direction: column;
     align-items: center;

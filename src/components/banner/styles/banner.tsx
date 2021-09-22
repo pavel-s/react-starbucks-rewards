@@ -5,6 +5,7 @@ export const Wrapper = styled.div`
   background-color: #1e3932;
   position: sticky;
   top: 0;
+  z-index: 10;
 
   @media (min-width: 1024px) {
     top: 99px;

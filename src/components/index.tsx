@@ -6,3 +6,6 @@ export { Button } from './button';
 export { default as Section } from './section';
 export { default as Hero } from './hero';
 export { default as Steps } from './steps';
+export { default as Tabs } from './tabs';
+export { default as Content } from './content';
+export { default as Emoji } from './emoji';
