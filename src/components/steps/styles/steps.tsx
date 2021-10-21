@@ -1,4 +1,4 @@
-import styled from 'styled-components/macro';
+import styled, { CSSProperties } from 'styled-components/macro';
 import { mGlobalContainer, mMobileDesktopVariant } from '../../../mixins';
 
 export const Container = styled.div`
@@ -10,6 +10,18 @@ export const Container = styled.div`
   flex-direction: column;
   align-items: center;
   text-align: center;
+`;
+
+export const Header = styled.div`
+  width: 100%;
+  margin: 0 auto;
+
+  @media (min-width: 768px) {
+    width: 66.66667%;
+  }
+  @media (min-width: 1024px) {
+    width: 50%;
+  }
 `;
 
 export const Title = styled.h2`
@@ -36,7 +48,9 @@ export const Text = styled.p`
   }
 `;
 
-export const Group = styled.div<{ variant?: 'mobile' | 'desktop' }>`
+export const Group = styled.div<{
+  variant?: Parameters<typeof mMobileDesktopVariant>[0]['variant'];
+}>`
   ${({ variant }) => mMobileDesktopVariant({ variant, display: 'flex' })}
   flex-direction: column;
   padding-top: 48px;
@@ -72,7 +86,7 @@ export const Card = styled.div`
   }
 `;
 
-export const Icon = styled.div`
+export const Icon = styled.div<{ width?: CSSProperties['width'] }>`
   max-width: 128px;
   padding-right: 1.6rem;
   margin: 0;
@@ -80,7 +94,7 @@ export const Icon = styled.div`
   text-align: center;
 
   > img {
-    width: 48px;
+    width: ${({ width }) => width};
   }
 
   @media (min-width: 768px) {
@@ -88,6 +102,7 @@ export const Icon = styled.div`
     padding-bottom: 2.4rem;
   }
 `;
+Icon.defaultProps = { width: '48px' };
 
 export const CardContent = styled.div`
   min-width: calc(100% - 128px);
@@ -103,5 +118,23 @@ export const CardContent = styled.div`
     > ${Title} {
       font-size: 1.9rem;
     }
+  }
+`;
+
+export const Button = styled.button`
+  min-width: 24px;
+  min-height: 24px;
+  margin-bottom: 1.6rem;
+  margin-top: 1.6rem;
+  background: transparent;
+  border: 0;
+  border-radius: 0;
+  padding: 0;
+  color: #00653e;
+  cursor: pointer;
+  text-decoration: underline;
+
+  :hover {
+    text-decoration: none;
   }
 `;

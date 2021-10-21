@@ -24,7 +24,7 @@ export const mGlobalContainer = css`
 `;
 
 type TmMobileDesktopVariantProps = {
-  variant?: 'mobile' | 'desktop';
+  variant?: 'mobile' | 'desktop' | 'any';
   display?: CSSProperties['display'];
   breakpoint?: CSSProperties['width'];
 };
@@ -35,10 +35,10 @@ export const mMobileDesktopVariant = ({
   display = 'flex',
   breakpoint = '768px',
 }: TmMobileDesktopVariantProps) => css<TmMobileDesktopVariantProps>`
-  display: ${variant === 'mobile' ? display : 'none'};
+  display: ${variant === 'any' || variant === 'mobile' ? display : 'none'};
 
   @media (min-width: ${breakpoint}) {
-    display: ${variant === 'desktop' ? display : 'none'};
+    display: ${variant === 'any' || variant === 'desktop' ? display : 'none'};
     align-items: flex-start;
   }
 `;
