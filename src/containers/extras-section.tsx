@@ -3,15 +3,16 @@ import { Section, Steps } from '../components';
 const ExtrasSection = () => {
   return (
     <Section>
+      <Section.Header>
+        <Section.Title>Endless Extras</Section.Title>
+        <Section.Text>
+          Joining Starbucks® Rewards means unlocking access to exclusive
+          benefits. Say hello to easy ordering, tasty Rewards and—yes, free
+          coffee.
+        </Section.Text>
+      </Section.Header>
+
       <Steps>
-        <Steps.Header>
-          <Steps.Title>Endless Extras</Steps.Title>
-          <Steps.Text>
-            Joining Starbucks® Rewards means unlocking access to exclusive
-            benefits. Say hello to easy ordering, tasty Rewards and—yes, free
-            coffee.
-          </Steps.Text>
-        </Steps.Header>
         <Steps.Group variant='any'>
           <Steps.Card>
             <Steps.Icon width='112px'>

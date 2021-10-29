@@ -12,18 +12,6 @@ export const Container = styled.div`
   text-align: center;
 `;
 
-export const Header = styled.div`
-  width: 100%;
-  margin: 0 auto;
-
-  @media (min-width: 768px) {
-    width: 66.66667%;
-  }
-  @media (min-width: 1024px) {
-    width: 50%;
-  }
-`;
-
 export const Title = styled.h2`
   font-size: 2rem;
   line-height: 1.385;

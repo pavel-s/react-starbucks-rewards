@@ -3,11 +3,13 @@ import { Section, Steps } from '../components';
 const StepsSection = () => {
   return (
     <Section>
-      <Steps>
-        <Steps.Title>Getting started is easy</Steps.Title>
-        <Steps.Text>
+      <Section.Header>
+        <Section.Title>Getting started is easy</Section.Title>
+        <Section.Text>
           Earn Stars and get rewarded in a few easy steps.
-        </Steps.Text>
+        </Section.Text>
+      </Section.Header>
+      <Steps>
         <Steps.Group>
           <Steps.Card>
             <Steps.Icon>

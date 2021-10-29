@@ -8,11 +8,9 @@ import {
   Icon,
   CardContent,
   Button,
-  Header,
 } from './styles/steps';
 
 type TSteps = TRSC<typeof Container> & {
-  Header: TRSC<typeof Header>;
   Title: TRSC<typeof Title>;
   Text: TRSC<typeof Text>;
   Group: TRSC<typeof Group>;
@@ -26,7 +24,6 @@ const Steps: TSteps = ({ children, ...rest }) => {
   return <Container {...rest}>{children}</Container>;
 };
 
-Steps.Header = ({ children, ...rest }) => <Header {...rest}>{children}</Header>;
 Steps.Title = ({ children, ...rest }) => <Title {...rest}>{children}</Title>;
 Steps.Text = ({ children, ...rest }) => <Text {...rest}>{children}</Text>;
 Steps.Group = ({ children, ...rest }) => <Group {...rest}>{children}</Group>;
