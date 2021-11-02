@@ -110,8 +110,8 @@ export const CardContent = styled.div`
 `;
 
 export const Button = styled.button`
-  min-width: 24px;
-  min-height: 24px;
+  min-width: 21px;
+  min-height: 21px;
   margin-bottom: 1.6rem;
   margin-top: 1.6rem;
   background: transparent;
