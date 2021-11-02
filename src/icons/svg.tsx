@@ -8,8 +8,10 @@ const Svg = styled.svg.attrs({
   ariaHidden: 'true',
   focusable: 'false',
 })`
+  display: inline-block;
   width: 100%;
   height: 100%;
+  vertical-align: middle;
 `;
 
 export default Svg;

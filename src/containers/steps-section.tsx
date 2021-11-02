@@ -3,7 +3,7 @@ import { Section, Steps } from '../components';
 const StepsSection = () => {
   return (
     <Section>
-      <Section.Header>
+      <Section.Header withContainer>
         <Section.Title>Getting started is easy</Section.Title>
         <Section.Text>
           Earn Stars and get rewarded in a few easy steps.

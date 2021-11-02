@@ -3,7 +3,7 @@ import { Section, Steps } from '../components';
 const ExtrasSection = () => {
   return (
     <Section>
-      <Section.Header>
+      <Section.Header withContainer>
         <Section.Title>Endless Extras</Section.Title>
         <Section.Text>
           Joining Starbucks® Rewards means unlocking access to exclusive

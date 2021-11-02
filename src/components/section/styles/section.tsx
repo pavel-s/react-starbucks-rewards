@@ -1,5 +1,5 @@
 import styled, { CSSProperties } from 'styled-components/macro';
-import { mGlobalContainer } from '../../../mixins';
+import { mGlobalContainer, mSectionHeader } from '../../../mixins';
 
 export const Section = styled.section`
   margin-bottom: 72px;
@@ -18,20 +18,13 @@ export const Background = styled.div<{ color?: CSSProperties['color'] }>`
 `;
 Background.defaultProps = { color: 'rgba(212, 233, 226, 0.33)' };
 
-export const Header = styled.div<{ textAlign?: CSSProperties['textAlign'] }>`
-  ${mGlobalContainer}
-  width: 100%;
-  margin: 0 auto;
-  text-align: ${({ textAlign }) => textAlign};
-
-  @media (min-width: 768px) {
-    width: 66.66667%;
-  }
-  @media (min-width: 1024px) {
-    width: 50%;
-  }
+export const Header = styled.div`
+  ${mSectionHeader}
 `;
-Header.defaultProps = { textAlign: 'center' };
+
+export const HeaderContainer = styled.div`
+  ${mGlobalContainer}
+`;
 
 export const Title = styled.h2`
   font-size: 2rem;

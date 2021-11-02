@@ -1,0 +1,45 @@
+[
+  {
+    "category": "1<span class='star'>★</span> per dollar",
+    "text": "Pay as you go",
+    "cards": [
+      {
+        "image": "/images/star-rates/1A.png",
+        "title": "Scan and pay separately",
+        "text": "Use cash or credit/debit card at the register."
+      },
+      {
+        "image": "/images/star-rates/1B.png",
+        "title": "Save payment in the app",
+        "text": "Check-out faster by saving a credit/debit card or PayPal to your account. You’ll be able to order ahead or scan and pay at the register in one step."
+      }
+    ]
+  },
+  {
+    "category": "2<span class='star'>★</span> per dollar",
+    "text": "Add funds in the app",
+    "cards": [
+      {
+        "image": "/images/star-rates/2A.png",
+        "title": "Preload",
+        "text": "To save time and earn Stars twice as fast, add money to your digital Starbucks Card using any payment option. Scan and pay in one step or order ahead in the app."
+      },
+      {
+        "image": "/images/star-rates/2B.png",
+        "title": "Register your gift card",
+        "text": "Then use it to pay through the app. You can even consolidate balances from multiple cards in one place."
+      }
+    ]
+  },
+  {
+    "category": "Up to 3<span class='star'>★</span> per dollar",
+    "text": "With Starbucks® Rewards Visa® Card",
+    "cards": [
+      {
+        "image": "/images/star-rates/3A.png",
+        "title": "Earn Stars even faster",
+        "text": "Earn Stars on all purchases you make with our <a href='https://www.starbucks.com/starbucks-rewards/credit-card' target='_blank'><span>credit card</span></a> in and outside of Starbucks. Earn 1 Star per $1 when you digitally preload your Starbucks Card with your Starbucks® Rewards Visa® Card, and earn 2 Stars per $1 when you pay with that preloaded Starbucks Card."
+      }
+    ]
+  }
+]

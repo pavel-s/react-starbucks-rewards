@@ -51,3 +51,16 @@ export const mAbsoluteSpread = css`
   left: 0;
   right: 0;
 `;
+
+export const mSectionHeader = css`
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+
+  @media (min-width: 768px) {
+    width: 66.66667%;
+  }
+  @media (min-width: 1024px) {
+    width: 50%;
+  }
+`;

@@ -9,3 +9,4 @@ export { default as Steps } from './steps';
 export { default as Tabs } from './tabs';
 export { default as Content } from './content';
 export { default as Emoji } from './emoji';
+export { default as StarCard } from './star-card';
