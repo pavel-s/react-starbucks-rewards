@@ -18,8 +18,9 @@ export const Background = styled.div<{ color?: CSSProperties['color'] }>`
 `;
 Background.defaultProps = { color: 'rgba(212, 233, 226, 0.33)' };
 
-export const Header = styled.div`
-  ${mSectionHeader}
+export const Header = styled.div<{ textAlign?: CSSProperties['textAlign'] }>`
+  ${mSectionHeader};
+  ${({ textAlign }) => (textAlign ? `text-align: ${textAlign}` : '')}
 `;
 
 export const HeaderContainer = styled.div`

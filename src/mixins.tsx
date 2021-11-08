@@ -64,3 +64,19 @@ export const mSectionHeader = css`
     width: 50%;
   }
 `;
+
+export const mTextSm = css`
+  font-size: 1.6rem;
+
+  @media (min-width: 768px) {
+    font-size: 1.9rem;
+  }
+`;
+
+export const mTextXxs = css`
+  font-size: 1.3rem;
+
+  @media (min-width: 768px) {
+    font-size: 1.4rem;
+  }
+`;

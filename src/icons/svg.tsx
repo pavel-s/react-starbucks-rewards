@@ -1,4 +1,4 @@
-import styled from 'styled-components/macro';
+import styled, { CSSProperties } from 'styled-components/macro';
 
 const Svg = styled.svg.attrs({
   version: '1.1',
@@ -7,11 +7,13 @@ const Svg = styled.svg.attrs({
   preserveAspectRatio: 'xMidYMid meet',
   ariaHidden: 'true',
   focusable: 'false',
-})`
+})<{ width?: CSSProperties['width'] }>`
   display: inline-block;
-  width: 100%;
+  width: ${({ width }) => width};
   height: 100%;
   vertical-align: middle;
+  flex-shrink: 0;
 `;
+Svg.defaultProps = { width: '24px' };
 
 export default Svg;
