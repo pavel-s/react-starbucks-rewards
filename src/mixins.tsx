@@ -80,3 +80,20 @@ export const mTextXxs = css`
     font-size: 1.4rem;
   }
 `;
+
+export const mChildLink = css`
+  a {
+    color: #00a862;
+    display: inline-flex;
+    align-items: center;
+
+    span {
+      line-height: 1;
+    }
+    .icon-svg {
+      fill: #00a862;
+      display: inline-block;
+      vertical-align: middle;
+    }
+  }
+`;

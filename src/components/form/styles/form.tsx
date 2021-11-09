@@ -1,6 +1,6 @@
 import { FieldMetaState } from 'react-final-form';
 import styled, { css } from 'styled-components/macro';
-import { mTextSm, mTextXxs } from '../../../mixins';
+import { mChildLink, mTextSm, mTextXxs } from '../../../mixins';
 
 export const Form = styled.form`
   padding-top: 1.6rem;
@@ -141,23 +141,7 @@ export const Submit = styled.button.attrs({ type: 'submit' })`
 
 export const Text = styled.p`
   ${mTextXxs};
+  ${mChildLink};
   padding: 0;
   margin: 0;
-
-  & a {
-    display: inline-flex;
-    align-items: center;
-    color: #00a862;
-
-    & span {
-      line-height: 1;
-    }
-
-    & .icon-svg {
-      fill: #00a862;
-      width: 24px;
-      display: inline-block;
-      vertical-align: middle;
-    }
-  }
 `;

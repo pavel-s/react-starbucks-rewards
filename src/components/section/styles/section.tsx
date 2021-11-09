@@ -1,5 +1,5 @@
 import styled, { css, CSSProperties } from 'styled-components/macro';
-import { mGlobalContainer, mSectionHeader } from '../../../mixins';
+import { mGlobalContainer, mChildLink, mSectionHeader } from '../../../mixins';
 
 export const Section = styled.section`
   margin-bottom: 72px;
@@ -42,24 +42,11 @@ export const Title = styled.h2`
   }
 `;
 
-export const Text = styled.p`
+export const Text = styled.p<{ paddingBottom?: boolean }>`
+  ${mChildLink};
   margin: 0;
   padding-top: 1.6rem;
-
-  a {
-    color: #00a862;
-    display: inline-flex;
-    align-items: center;
-
-    span {
-      line-height: 1;
-    }
-    .icon-svg {
-      fill: #00a862;
-      display: inline-block;
-      vertical-align: middle;
-    }
-  }
+  padding-bottom: ${({ paddingBottom }) => (paddingBottom ? '1.6rem' : '0')};
 `;
 
 const offset2of12_MdSize6of12 = css`
