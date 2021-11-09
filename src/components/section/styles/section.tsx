@@ -1,4 +1,4 @@
-import styled, { CSSProperties } from 'styled-components/macro';
+import styled, { css, CSSProperties } from 'styled-components/macro';
 import { mGlobalContainer, mSectionHeader } from '../../../mixins';
 
 export const Section = styled.section`
@@ -46,7 +46,53 @@ export const Text = styled.p`
   margin: 0;
   padding-top: 1.6rem;
 
-  > a {
-    color: #008248;
+  a {
+    color: #00a862;
+    display: inline-flex;
+    align-items: center;
+
+    span {
+      line-height: 1;
+    }
+    .icon-svg {
+      fill: #00a862;
+      display: inline-block;
+      vertical-align: middle;
+    }
   }
+`;
+
+const offset2of12_MdSize6of12 = css`
+  width: 100%;
+
+  @media (min-width: 768px) {
+    width: 50%;
+    margin-left: 16.66667%;
+  }
+`;
+
+const sizeXLarge_margin0auto = css`
+  max-width: 1440px;
+  margin: 0 auto;
+`;
+
+type TContainerSize = 'offset2of12_MdSize6of12' | 'sizeXLarge_margin0auto';
+
+export const Container = styled.div<{
+  size?: TContainerSize;
+  globalGutters?: boolean;
+}>`
+  ${({ size }) => {
+    switch (size) {
+      case 'offset2of12_MdSize6of12':
+        return offset2of12_MdSize6of12;
+
+      case 'sizeXLarge_margin0auto':
+        return sizeXLarge_margin0auto;
+
+      default:
+        return '';
+    }
+  }}
+  ${({ globalGutters }) => (globalGutters ? mGlobalContainer : '')}
 `;

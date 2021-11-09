@@ -6,6 +6,7 @@ import {
   Title,
   Text,
   HeaderContainer,
+  Container,
 } from './styles/section';
 
 type TSection = TRSC<typeof SectionBase> & {
@@ -13,6 +14,7 @@ type TSection = TRSC<typeof SectionBase> & {
   Header: TRSC<typeof Header, { withContainer?: boolean }>;
   Title: TRSC<typeof Title>;
   Text: TRSC<typeof Text>;
+  Container: TRSC<typeof Container>;
 };
 
 const Section: TSection = ({ children, ...rest }) => {
@@ -32,5 +34,9 @@ Section.Header = ({ withContainer = false, children, ...rest }) =>
 
 Section.Title = ({ children, ...rest }) => <Title {...rest}>{children}</Title>;
 Section.Text = ({ children, ...rest }) => <Text {...rest}>{children}</Text>;
+
+Section.Container = ({ children, ...rest }) => (
+  <Container {...rest}>{children}</Container>
+);
 
 export default Section;
