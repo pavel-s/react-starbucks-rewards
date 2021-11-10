@@ -1,7 +1,7 @@
 import styled, { css, CSSProperties } from 'styled-components/macro';
 import { mGlobalContainer, mChildLink, mSectionHeader } from '../../../mixins';
 
-export const Section = styled.section`
+const sectionMargin = css`
   margin-bottom: 72px;
 
   :last-of-type {
@@ -11,6 +11,13 @@ export const Section = styled.section`
   @media (min-width: 768px) {
     margin-bottom: 128px;
   }
+`;
+
+export const Section = styled.section<{
+  marginBottom?: CSSProperties['marginBottom'];
+}>`
+  ${({ marginBottom }) =>
+    marginBottom ? `margin-bottom: ${marginBottom}` : sectionMargin}
 `;
 
 export const Background = styled.div<{ color?: CSSProperties['color'] }>`

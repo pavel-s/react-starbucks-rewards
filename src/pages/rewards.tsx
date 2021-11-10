@@ -6,6 +6,7 @@ import HeaderContainer from '../containers/header';
 import HeroSection from '../containers/hero-section';
 import OptInFormSection from '../containers/opt-in-form-section';
 import QuestionSection from '../containers/questions-section';
+import RestrictionsSection from '../containers/restrictions-section';
 import StarRatesSection from '../containers/star-rates';
 import StepsSection from '../containers/steps-section';
 
@@ -27,6 +28,7 @@ const Rewards = () => {
         <StarRatesSection />
         <OptInFormSection />
         <QuestionSection />
+        <RestrictionsSection />
         <Section style={{ height: '1000px' }}></Section>
       </Content>
     </>

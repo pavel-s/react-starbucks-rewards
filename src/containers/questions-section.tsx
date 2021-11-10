@@ -7,7 +7,7 @@ const QuestionSection = () => {
       <Section.Container globalGutters>
         <Section.Container size='offset2of12_MdSize6of12'>
           <Section.Title>Questions?</Section.Title>
-          <Section.Text>
+          <Section.Text paddingBottom>
             We want to help in any way we can. You can ask your barista anytime
             or we’ve answered the most commonly asked questions{' '}
             <a
