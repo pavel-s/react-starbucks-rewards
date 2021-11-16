@@ -13,6 +13,7 @@ const Svg = styled.svg.attrs({
   height: 100%;
   vertical-align: middle;
   flex-shrink: 0;
+  overflow: visible;
 `;
 Svg.defaultProps = { width: '24px' };
 

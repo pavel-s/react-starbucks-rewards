@@ -97,3 +97,9 @@ export const mChildLink = css`
     }
   }
 `;
+
+export const mIconSvgHover = css`
+  fill: rgba(0, 0, 0, 0.87);
+  opacity: 0.1;
+  transform: scale(1);
+`;

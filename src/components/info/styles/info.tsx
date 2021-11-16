@@ -9,11 +9,16 @@ const paddingBottom16 = css`
 `;
 
 export const Container = styled.div`
-  padding-bottom: 1.6rem;
-  padding-top: 4.8rem;
+  padding-bottom: 0;
+  padding-top: 3.2rem;
   text-align: left;
   display: flex;
   flex-wrap: wrap;
+
+  @media (min-width: 768px) {
+    padding-bottom: 1.6rem;
+    padding-top: 4.8rem;
+  }
 `;
 
 export const Info = styled.div`

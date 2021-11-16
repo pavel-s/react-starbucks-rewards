@@ -1,0 +1,75 @@
+[
+  {
+    "category_name": "About Us",
+    "items": [
+      { "title": "Our Company", "href": "https://www.starbucks.com/" },
+      { "title": "Our Coffee", "href": "https://www.starbucks.com/" },
+      { "title": "Stories and News", "href": "https://www.starbucks.com/" },
+      { "title": "Starbucks Archive", "href": "https://www.starbucks.com/" },
+      { "title": "Investor Relations", "href": "https://www.starbucks.com/" },
+      { "title": "Customer Service", "href": "https://www.starbucks.com/" }
+    ]
+  },
+  {
+    "category_name": "Careers",
+    "items": [
+      { "title": "Culture and Values", "href": "https://www.starbucks.com/" },
+      {
+        "title": "Inclusion, Diversity, and Equity",
+        "href": "https://www.starbucks.com/"
+      },
+      {
+        "title": "College Achievement Plan",
+        "href": "https://www.starbucks.com/"
+      },
+      { "title": "Alumni Community", "href": "https://www.starbucks.com/" },
+      { "title": "U.S. Careers", "href": "https://www.starbucks.com/" },
+      { "title": "International Careers", "href": "https://www.starbucks.com/" }
+    ]
+  },
+  {
+    "category_name": "Social Impact",
+    "items": [
+      { "title": "People", "href": "https://www.starbucks.com/" },
+      { "title": "Planet", "href": "https://www.starbucks.com/" },
+      {
+        "title": "Environmental and Social Impact Reporting",
+        "href": "https://www.starbucks.com/"
+      }
+    ]
+  },
+  {
+    "category_name": "For Business Partners",
+    "items": [
+      {
+        "title": "Landlord Support Center",
+        "href": "https://www.starbucks.com/"
+      },
+      { "title": "Suppliers", "href": "https://www.starbucks.com/" },
+      {
+        "title": "Corporate Gift Card Sales",
+        "href": "https://www.starbucks.com/"
+      },
+      {
+        "title": "Office and Foodservice Coffee",
+        "href": "https://www.starbucks.com/"
+      }
+    ]
+  },
+  {
+    "category_name": "Order and Pickup",
+    "items": [
+      { "title": "Order on the App", "href": "https://www.starbucks.com/" },
+      { "title": "Order on the Web", "href": "https://www.starbucks.com/" },
+      { "title": "Delivery", "href": "https://www.starbucks.com/" },
+      {
+        "title": "Order and Pickup Options",
+        "href": "https://www.starbucks.com/"
+      },
+      {
+        "title": "Explore and Find Coffee for Home",
+        "href": "https://www.starbucks.com/"
+      }
+    ]
+  }
+]

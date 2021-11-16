@@ -1,7 +1,7 @@
 import { Banner, Content, Button } from '../components';
-import { Section } from '../components/section/styles/section';
 import ExtrasSection from '../containers/extras-section';
 import FavoritesSection from '../containers/favorites-section';
+import Footer from '../containers/footer';
 import HeaderContainer from '../containers/header';
 import HeroSection from '../containers/hero-section';
 import OptInFormSection from '../containers/opt-in-form-section';
@@ -29,7 +29,7 @@ const Rewards = () => {
         <OptInFormSection />
         <QuestionSection />
         <RestrictionsSection />
-        <Section style={{ height: '1000px' }}></Section>
+        <Footer />
       </Content>
     </>
   );

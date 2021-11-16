@@ -12,3 +12,5 @@ export { default as Emoji } from './emoji';
 export { default as StarCard } from './star-card';
 export { default as Form } from './form';
 export { default as Info } from './info';
+export { default as Accordion } from './accordion';
+export { default as Footer } from './footer';
