@@ -8,7 +8,6 @@ import {
   MainNavItem,
   Link,
   Map,
-  Button,
   Hamburger,
   LogoWrapper,
   SvgBase,
@@ -24,7 +23,6 @@ type THeader = TRSC<typeof Container> & {
   MainNavItem: TRSC<typeof MainNavItem>;
   Link: TRSC<typeof Link>;
   Map: TRSC<typeof Map>;
-  Button: TRSC<typeof Button>;
   Hamburger: TRSC<typeof Hamburger>;
 };
 
@@ -57,10 +55,6 @@ Header.Map = ({ children, ...rest }) => (
     <IconMapMark />
     {children}
   </Map>
-);
-
-Header.Button = ({ children, ...rest }) => (
-  <Button {...rest}>{children}</Button>
 );
 
 Header.Hamburger = function HeaderHamburger({ open, ...rest }) {

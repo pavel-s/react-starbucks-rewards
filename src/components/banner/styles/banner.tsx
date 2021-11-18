@@ -22,6 +22,10 @@ export const Banner = styled.div`
 
   ${mGlobalContainer}
 
+  > a {
+    min-height: 33px;
+  }
+
   @media (min-width: 768px) {
     padding-left: 99px;
 

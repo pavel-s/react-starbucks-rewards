@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import useMediaQuery from '../hooks/use-media-query';
-import { Drawer, Header, Logo } from './../components';
+import { Drawer, Header, Logo, Button } from './../components';
 
 const navLinks = [
   { title: 'Menu', href: '#' },
@@ -56,10 +56,16 @@ const HeaderContainer = () => {
         </Header.Group>
         <Header.Group>
           <Header.Map href='#'>Find a store</Header.Map>
-          <Header.Button>Sign in</Header.Button>
-          <Header.Button variant='filled' background='#000' color='#fff'>
+          <Button>Sign in</Button>
+          <Button
+            as='a'
+            href='https://www.starbucks.com/account/create'
+            variant='filled'
+            background='#000'
+            color='#fff'
+          >
             Join now
-          </Header.Button>
+          </Button>
         </Header.Group>
         <Header.Hamburger open={drawerOpen} onClick={toggleDrawer} />
       </Header.Nav>
@@ -67,10 +73,16 @@ const HeaderContainer = () => {
         <Drawer.Menu menuItems={drawerNavLinks} />
         <Drawer.Divider />
         <Drawer.Group>
-          <Header.Button>Sign in</Header.Button>
-          <Header.Button variant='filled' background='#000' color='#fff'>
+          <Button>Sign in</Button>
+          <Button
+            as='a'
+            href='https://www.starbucks.com/account/create'
+            variant='filled'
+            background='#000'
+            color='#fff'
+          >
             Join now
-          </Header.Button>
+          </Button>
         </Drawer.Group>
         <Drawer.Group>
           <Header.Map href='#'>Find a store</Header.Map>

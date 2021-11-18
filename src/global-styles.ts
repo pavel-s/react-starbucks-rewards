@@ -65,6 +65,10 @@ const GlobalStyles = createGlobalStyle`
     font: inherit; /* 2 */
     margin: 0; /* 3 */
   }
+
+  button {
+    letter-spacing: normal;
+  }
 `;
 
 export default GlobalStyles;

@@ -14,7 +14,7 @@ const HeroSection = () => {
             <Button
               variant='filled'
               color='#fff'
-              background='#008248'
+              background='#00754a'
               as='a'
               href='#'
             >
@@ -30,7 +30,7 @@ const HeroSection = () => {
             <Button
               variant='filled'
               color='#fff'
-              background='#008248'
+              background='#00754a'
               fontSize='1.6rem'
               as='a'
               href='#'

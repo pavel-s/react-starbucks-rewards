@@ -23,6 +23,7 @@ export const Container = styled.header`
 export const Group = styled.div`
   display: none;
   align-items: center;
+  flex-shrink: 0;
 
   @media (min-width: ${BP_HAMBURGER}) {
     display: flex;
@@ -35,6 +36,10 @@ export const Nav = styled.nav`
 
   ${Group} + ${Group} {
     margin-left: auto;
+
+    > *:not(:last-child, :first-child) {
+      margin-right: 1.6rem;
+    }
   }
 
   ${mGlobalContainer}
@@ -143,44 +148,6 @@ export const Map = styled.a`
     fill: #008248;
   }
 `;
-
-export const Button = styled.button<{
-  variant?: 'outline' | 'filled';
-  background?: string;
-}>`
-  display: inline-block;
-  background: ${({ variant, background }) =>
-    variant === 'filled' ? background : 'none'};
-  border: ${({ variant }) =>
-    variant === 'filled' ? '1px solid #000' : '1px solid #1E3932'};
-  border-radius: 50px;
-  padding: 7px 16px;
-  font-size: 1.4rem;
-  font-weight: 600;
-  line-height: 1.2;
-  text-align: center;
-  text-decoration: none;
-  transition: all 0.2s ease;
-  color: ${({ color }) => color};
-  margin-right: 1.6rem;
-  letter-spacing: ${({ variant }) =>
-    variant === 'filled' ? '-.01em' : 'normal'};
-  cursor: pointer;
-
-  :last-of-type {
-    margin-right: 0;
-  }
-
-  :active {
-    transform: scale(0.95);
-  }
-`;
-
-Button.defaultProps = {
-  variant: 'outline',
-  background: '#fff',
-  color: 'rgba(0, 0, 0, .87)',
-};
 
 export const SvgBase = styled.svg.attrs({
   version: '1.1',

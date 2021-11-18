@@ -154,6 +154,11 @@ export const Divider = styled.hr`
 
 export const Group = styled.div`
   padding: 1.6rem 2.4rem 0 2.4rem;
+  flex-shrink: 0;
+
+  > *:not(:last-child) {
+    margin-right: 1.6rem;
+  }
 
   :nth-of-type(1) {
     padding-top: 0;
