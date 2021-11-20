@@ -106,10 +106,10 @@ export const Link = styled.a<{
   font-weight: 700;
   font-size: 1.4rem;
   letter-spacing: 0.1em;
-  box-shadow: ${({ active }) => (active ? 'inset 0 -6px #008248' : 'none')};
+  box-shadow: ${({ active }) => (active ? 'inset 0 -6px #00754a' : 'none')};
 
   :hover {
-    color: #008248;
+    color: #00754a;
   }
 
   @media (min-width: 768px) {
