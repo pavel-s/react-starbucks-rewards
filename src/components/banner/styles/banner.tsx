@@ -6,6 +6,7 @@ export const Wrapper = styled.div`
   position: sticky;
   top: 0;
   z-index: 10;
+  box-shadow: 0 4px 4px 0 rgb(0 0 0 / 12%), 0 0 2px 0 rgb(0 0 0 / 24%);
 
   @media (min-width: 1024px) {
     top: 99px;
@@ -18,7 +19,6 @@ export const Banner = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  box-shadow: 0 4px 4px 0 rgb(0 0 0 / 12%), 0 0 2px 0 rgb(0 0 0 / 24%);
 
   ${mGlobalContainer}
 
